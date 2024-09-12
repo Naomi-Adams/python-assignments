@@ -15,7 +15,7 @@ def suggest_word(word, dictionary):
     words = dictionary.keys()
     suggestions = difflib.get_close_matches(word, words)
     return suggestions[0] if suggestions else None
-def find_definition(word,dictionary.json):
+def find_definition(word,dictionary.json):    
     definition = get_definition(word,dictionary.json)
     if definition:
         return definition
